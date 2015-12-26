@@ -1,0 +1,25 @@
+{
+  "name": "connectTest",
+  "version": "0.0.1",
+  "description": "My First MEAN Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TestMEANApps"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "AngularJS",
+    "Node.js"
+  ],
+  "author": "Patrick Shaw",
+  "license": "MIT",
+  "dependencies" : {
+    "express" : "latest",
+    "grunt" : "latest"
+  }
+}
