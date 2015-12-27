@@ -173,3 +173,16 @@ exports.userByUsername = function(req, res, next, userName) {
     }
   });
 };
+
+/**
+* Middleware Used to Determine if User Is Logged In
+**/
+exports.requiresLogin = function(req, res, next) {
+  if (!req.isAuthenticated()) {
+    return res.status(401).send({
+      message : 'User is not logged in'
+    });
+  }
+
+  next();
+};
